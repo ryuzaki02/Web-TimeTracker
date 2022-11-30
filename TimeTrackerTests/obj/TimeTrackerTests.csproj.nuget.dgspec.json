@@ -4,6 +4,76 @@
     "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerTests/TimeTrackerTests.csproj": {}
   },
   "projects": {
+    "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj",
+        "projectName": "TimeTrackerLibrary",
+        "projectPath": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj",
+        "packagesPath": "/Users/tisagamer/.nuget/packages/",
+        "outputPath": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/tisagamer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerTests/TimeTrackerTests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,7 +96,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj": {
+                "projectPath": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

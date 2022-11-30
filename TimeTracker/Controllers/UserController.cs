@@ -7,26 +7,26 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TimeTrackerLibrary.Data;
 using TimeTrackerLibrary.Model;
+using TimeTrackerLibrary.ViewModel;
 
 namespace TimeTracker
 {
     public class UserController : Controller
     {
         private readonly TimeTrackerDbContext _context;
+        private UserViewModel _userViewModel;
 
         public UserController(TimeTrackerDbContext context)
         {
             _context = context;
+            _userViewModel = new UserViewModel(context);            
         }
 
         // GET: User
         public async Task<IActionResult> Index()
         {
-            ViewData["UserList"] = await _context.Users.ToListAsync();
+            ViewData["UserList"] = await _userViewModel.GetUsers();
             return View();
-            //return _context.Users != null ? 
-            //            View(await _context.Users.ToListAsync()) :
-            //            Problem("Entity set 'TimeTrackerDbContext.Users'  is null.");
         }
 
         // GET: User/Details/5
