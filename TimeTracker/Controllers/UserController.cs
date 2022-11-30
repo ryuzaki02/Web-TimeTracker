@@ -22,9 +22,11 @@ namespace TimeTracker
         // GET: User
         public async Task<IActionResult> Index()
         {
-              return _context.Users != null ? 
-                          View(await _context.Users.ToListAsync()) :
-                          Problem("Entity set 'TimeTrackerDbContext.Users'  is null.");
+            ViewData["UserList"] = await _context.Users.ToListAsync();
+            return View();
+            //return _context.Users != null ? 
+            //            View(await _context.Users.ToListAsync()) :
+            //            Problem("Entity set 'TimeTrackerDbContext.Users'  is null.");
         }
 
         // GET: User/Details/5

@@ -1,41 +1,68 @@
-@model IEnumerable<TimeTrackerLibrary.Model.User>
+@model TimeTrackerLibrary.Model.User
 
 @{
     ViewData["Title"] = "Index";
+    @*List of todos passed from controller to show in table list*@
+    var UserList = (IEnumerable<TimeTrackerLibrary.Model.User>)ViewData["UserList"];
 }
 
-<h1>Index</h1>
+<h1>List of Users</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+@*This style attribute provides border styling and alternate color to cell*@
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    td, th {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: lightgrey;
+    }
+</style>
+
+@*This is the main table to show all todos*@
+<table>
+    @*This inline style provides background yellow to header only*@
+    <thead style="background-color:yellow">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.UserName)
+                Id
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Rate)
+                Name
+            </th>
+            <th>
+                Rate
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rate)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.UserId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.UserId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.UserId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in UserList)
+        {
+            <tr>
+                <!--<td>-->
+                @*This partial is used to show inline form to update Todo*@
+                <!--<partial name="_EditPartial" model="@item" />
+                </td>-->
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rate)
+                </td>
+                <!--<td>-->
+                @*This partial is used to show inline form to delete Todo*@
+                <!--<partial name="_DeletePartial" model="@item" />
+                </td>-->
+            </tr>
+        }
     </tbody>
 </table>
