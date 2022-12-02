@@ -30,7 +30,7 @@
 @*This is the main table to show all todos*@
 <table>
     @*This inline style provides background yellow to header only*@
-    <thead style="background-color:yellow">
+    <thead style="background-color:lightblue">
         <tr>
             <th>
                 Id
@@ -39,7 +39,7 @@
                 Name
             </th>
             <th>
-                Rate
+                Rate (CAD)
             </th>
             <th></th>
         </tr>
@@ -48,21 +48,25 @@
         @foreach (var item in UserList)
         {
             <tr>
-                <!--<td>-->
-                @*This partial is used to show inline form to update Todo*@
-                <!--<partial name="_EditPartial" model="@item" />
-                </td>-->
+                <td>
+                    @*This partial is used to show inline form to update Todo*@
+                    @Html.DisplayFor(modelItem => item.UserId)
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.UserName)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Rate)
                 </td>
-                <!--<td>-->
-                @*This partial is used to show inline form to delete Todo*@
-                <!--<partial name="_DeletePartial" model="@item" />
-                </td>-->
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.UserId">Edit</a> |
+                    <a asp-controller="TimeSheet" asp-action="Index">Time Sheets</a>
+                </td>                
             </tr>
         }
     </tbody>
 </table>
+
+
+@*This partial is used to show inline form to create User*@
+<partial name="_CreateUserPartial" class="TimeTrackerLibrary.Model.User" />
