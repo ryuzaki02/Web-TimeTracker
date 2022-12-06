@@ -1,34 +1,58 @@
 ﻿<Properties StartupConfiguration="{D709879A-84A1-4CC1-BB88-FF13D686CB8A}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.TimeTrackerTests FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="app.config">
+  <MonoDevelop.Ide.ItemProperties.TimeTracker PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TimeTracker/Views/User/Index.cshtml">
     <Files>
       <File FileName="TimeTracker/Program.cs" />
-      <File FileName="TimeTrackerTests/UnitTest1.cs" />
-      <File FileName="TimeTrackerLibrary/Model/User.cs" />
-      <File FileName="TimeTrackerLibrary/Model/TimeSheet.cs" />
-      <File FileName="TimeTrackerLibrary/Data/TimeTrackerDbContext.cs" />
-      <File FileName="TimeTrackerTests/UserTest.cs" />
-      <File FileName="TimeTrackerTests/Usings.cs" />
-      <File FileName="TimeTrackerLibrary/ViewModel/UserViewModel.cs" />
-      <File FileName="TimeTracker/Controllers/HomeController.cs" />
+      <File FileName="TimeTrackerTests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="TimeTrackerLibrary/Model/User.cs" Line="1" Column="1" />
+      <File FileName="TimeTrackerLibrary/Model/TimeSheet.cs" Line="1" Column="1" />
+      <File FileName="TimeTrackerLibrary/Data/TimeTrackerDbContext.cs" Line="1" Column="1" />
+      <File FileName="TimeTrackerTests/UserTest.cs" Line="1" Column="1" />
+      <File FileName="TimeTrackerTests/Usings.cs" Line="1" Column="1" />
+      <File FileName="TimeTrackerLibrary/ViewModel/UserViewModel.cs" Line="1" Column="1" />
+      <File FileName="TimeTracker/Controllers/HomeController.cs" Line="1" Column="1" />
       <File FileName="TimeTracker/Controllers/TimeSheetController.cs" Line="1" Column="1" />
       <File FileName="app.config" Line="1" Column="1" />
+      <File FileName="TimeTracker/Properties/launchSettings.json" Line="2" Column="19" />
+      <File FileName="TimeTracker/Controllers/AuthController.cs" Line="21" Column="28" />
+      <File FileName="TimeTracker/Controllers/UserController.cs" Line="26" Column="24" />
+      <File FileName="TimeTracker/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="TimeTracker/Views/Home/Login.html" Line="11" Column="1" />
+      <File FileName="TimeTracker/Views/TimeSheet/Create.cshtml" Line="1" Column="1" />
+      <File FileName="TimeTracker/Views/TimeSheet/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="TimeTracker/Views/TimeSheet/Details.cshtml" Line="1" Column="1" />
+      <File FileName="TimeTracker/Views/TimeSheet/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="TimeTracker/Views/TimeSheet/Index.cshtml" Line="1" Column="1" />
+      <File FileName="TimeTracker/Views/User/Create.cshtml" Line="1" Column="1" />
+      <File FileName="TimeTracker/Views/User/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="TimeTracker/Views/User/Details.cshtml" Line="1" Column="1" />
+      <File FileName="TimeTracker/Views/User/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="TimeTracker/Views/User/Index.cshtml" Line="72" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TimeTracker" expanded="True">
             <Node name="TimeTracker" expanded="True">
-              <Node name="Dependencies" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Views" expanded="True" />
-            </Node>
-            <Node name="TimeTrackerLibrary" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-              <Node name="Model" expanded="True" />
-              <Node name="ViewModel" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="TimeSheet" expanded="True" />
+                <Node name="User" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
             </Node>
             <Node name="TimeTrackerTests" expanded="True" />
           </Node>
@@ -36,12 +60,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.TimeTrackerLibrary FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.TimeTracker FirstBuild="True" PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.TimeTrackerTests FirstBuild="True" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

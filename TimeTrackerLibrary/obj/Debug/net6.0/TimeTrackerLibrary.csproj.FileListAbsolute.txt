@@ -12,3 +12,17 @@
 /Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/TimeTrackerLibrary.pdb
 /Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/TimeTrackerLibrary.genruntimeconfig.cache
 /Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/ref/TimeTrackerLibrary.dll
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/bin/Debug/net6.0/TimeTrackerLibrary.deps.json
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/bin/Debug/net6.0/TimeTrackerLibrary.runtimeconfig.json
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/bin/Debug/net6.0/TimeTrackerLibrary.dll
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/bin/Debug/net6.0/TimeTrackerLibrary.pdb
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/TimeTrackerLibrary.csproj.AssemblyReference.cache
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/TimeTrackerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/TimeTrackerLibrary.AssemblyInfoInputs.cache
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/TimeTrackerLibrary.AssemblyInfo.cs
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/TimeTrackerLibrary.csproj.CoreCompileInputs.cache
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/TimeTrackerLibrary.dll
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/refint/TimeTrackerLibrary.dll
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/TimeTrackerLibrary.pdb
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/TimeTrackerLibrary.genruntimeconfig.cache
+/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/Debug/net6.0/ref/TimeTrackerLibrary.dll
