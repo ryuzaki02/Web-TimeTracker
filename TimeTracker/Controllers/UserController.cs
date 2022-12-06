@@ -16,18 +16,7 @@ namespace TimeTracker
         private readonly TimeTrackerDbContext _context;
         private UserViewModel _userViewModel;
 
-        public UserController(TimeTrackerDbContext context)
-        {
-            _context = context;
-            _userViewModel = new UserViewModel(context);            
-        }
-
-        // GET: User
-        public async Task<IActionResult> Index()
-        {
-            ViewData["UserList"] = await _userViewModel.GetUsers();
-            return View();
-        }
+   
 
         // GET: User/Details/5
         public async Task<IActionResult> Details(int? id)
