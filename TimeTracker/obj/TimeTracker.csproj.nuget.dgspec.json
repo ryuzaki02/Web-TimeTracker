@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTracker/TimeTracker.csproj": {}
+    "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTracker/TimeTracker.csproj": {}
   },
   "projects": {
-    "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTracker/TimeTracker.csproj": {
+    "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTracker/TimeTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTracker/TimeTracker.csproj",
+        "projectUniqueName": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTracker/TimeTracker.csproj",
         "projectName": "TimeTracker",
-        "projectPath": "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTracker/TimeTracker.csproj",
-        "packagesPath": "/Users/divyakhemani/.nuget/packages/",
-        "outputPath": "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTracker/obj/",
+        "projectPath": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTracker/TimeTracker.csproj",
+        "packagesPath": "/Users/tisagamer/.nuget/packages/",
+        "outputPath": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTracker/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/divyakhemani/.nuget/NuGet/NuGet.Config"
+          "/Users/tisagamer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -27,8 +27,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj": {
-                "projectPath": "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj"
+              "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj": {
+                "projectPath": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj"
               }
             }
           }
@@ -85,21 +85,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj": {
+    "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj",
+        "projectUniqueName": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj",
         "projectName": "TimeTrackerLibrary",
-        "projectPath": "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj",
-        "packagesPath": "/Users/divyakhemani/.nuget/packages/",
-        "outputPath": "/Users/divyakhemani/Downloads/localization-translation-dicardo-d-main/Web-TimeTracker/TimeTrackerLibrary/obj/",
+        "projectPath": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/TimeTrackerLibrary.csproj",
+        "packagesPath": "/Users/tisagamer/.nuget/packages/",
+        "outputPath": "/Users/tisagamer/Documents/Projects/Cambrian/TimeTracker/TimeTrackerLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/divyakhemani/.nuget/NuGet/NuGet.Config"
+          "/Users/tisagamer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -155,7 +155,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }
