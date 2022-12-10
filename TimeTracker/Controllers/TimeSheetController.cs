@@ -22,6 +22,17 @@ namespace TimeTracker
             _context = context;
         }
 
+        // Linq query
+        private AppUser? GetUser()
+        {
+            var username = User.Identity!.Name;
+            return (from u in _db.Users
+                    where string.Equals(username, u.UserName)
+                    select u)
+                .Include(_user => _user.WatchList!)
+                .FirstOrDefault();
+        }
+
         private void CreateViewModel(int? id)
         {
             if (id == null)
