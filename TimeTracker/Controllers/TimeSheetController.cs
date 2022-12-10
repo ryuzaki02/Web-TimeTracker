@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -7,24 +8,35 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TimeTrackerLibrary.Data;
 using TimeTrackerLibrary.Model;
+using TimeTrackerLibrary.ViewModel;
 
 namespace TimeTracker
 {
     public class TimeSheetController : Controller
     {
         private readonly TimeTrackerDbContext _context;
+        private TimeSheetViewModel? timeSheetViewModel;
 
         public TimeSheetController(TimeTrackerDbContext context)
         {
             _context = context;
         }
 
-        // GET: TimeSheet
-        public async Task<IActionResult> Index()
+        private void CreateViewModel(int? id)
         {
-              return _context.TimeSheets != null ? 
-                          View(await _context.TimeSheets.ToListAsync()) :
-                          Problem("Entity set 'TimeTrackerDbContext.TimeSheets'  is null.");
+            if (id == null)
+            {
+                return;
+            }            
+            timeSheetViewModel = new TimeSheetViewModel(_context, id ?? -1);
+        }
+
+        // GET: TimeSheet
+        public async Task<IActionResult> Index(int? id)
+        {
+            CreateViewModel(id);
+            ViewData["TimeSheetList"] = await timeSheetViewModel!.GetTimeSheets();            
+            return View();
         }
 
         // GET: TimeSheet/Details/5
@@ -46,9 +58,11 @@ namespace TimeTracker
         }
 
         // GET: TimeSheet/Create
-        public IActionResult Create()
+        public IActionResult Create(int? id)
         {
-            return View();
+            CreateViewModel(id);
+            TimeSheetContact contact = new TimeSheetContact() { Timesheet = new TimeSheet(), UserId = id ?? -1 };
+            return View(contact);
         }
 
         // POST: TimeSheet/Create
@@ -56,15 +70,23 @@ namespace TimeTracker
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("TimesheetId,WorkDate,BeginTime,Description,Activity")] TimeSheet timeSheet)
+        public async Task<IActionResult> Create([FromForm] TimeSheetContact contact)
         {
-            if (ModelState.IsValid)
+            CreateViewModel(contact.UserId);
+            User? user = timeSheetViewModel!.GetUser(contact.UserId);
+            if (user != null)
             {
-                _context.Add(timeSheet);
+                contact.Timesheet.UserId = contact.UserId;
+                _context.Add(contact.Timesheet);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                //dynamic args = new ExpandoObject();
+                //args.id = contact.UserId;
+                //return RedirectToAction(nameof(Index),args);
+                
+                return RedirectToAction("Index", "User");
             }
-            return View(timeSheet);
+            return View(contact.Timesheet);
         }
 
         // GET: TimeSheet/Edit/5

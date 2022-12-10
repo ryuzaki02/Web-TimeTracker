@@ -6,15 +6,17 @@ namespace TimeTrackerLibrary.Model
 	public class TimeSheet
 	{
         [Required]
-        public User? User { get; set; }
+        public int UserId { get; set; }
         [Key]
         public int TimesheetId { get; set; }
         [Required]
-        public DateOnly WorkDate { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime WorkDate { get; set; }
         [Required]
-        public TimeOnly BeginTime { get; set; }
+        [DataType(DataType.Time)]
+        public DateTime BeginTime { get; set; }
         [Required]
-        public TimeOnly Duration { get; }
+        public DateTime Duration { get; }
         [Required]
         public double Amount { get; }
         [Required]
