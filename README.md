@@ -34,3 +34,8 @@ Some were saying to add it to the header html and scripts but could not work
 
 Resolution - 
 After having discussion with you. You guided me we can achieve the same with the help of database model and the data type.
+
+
+Check-in 3 Updates
+
+
