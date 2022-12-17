@@ -24,8 +24,13 @@ namespace TimeTrackerLibrary.ViewModel
         public async Task<List<TimeSheet>> GetTimeSheets()
         {
             List<TimeSheet> temp = await _context.TimeSheets.ToListAsync();
+            return FilterUserTimeSheets(temp);
+        }
+
+        public List<TimeSheet> FilterUserTimeSheets(List<TimeSheet> allTimesheets)
+        {
             List<TimeSheet> timeSheets = new List<TimeSheet>();
-            foreach(TimeSheet timeSheet in temp)
+            foreach (TimeSheet timeSheet in allTimesheets)
             {
                 if (timeSheet.UserId == _userId)
                 {
@@ -33,7 +38,7 @@ namespace TimeTrackerLibrary.ViewModel
                 }
             }
             return timeSheets;
-        } 
+        }
     }
 }
 

@@ -28,6 +28,13 @@ namespace TimeTrackerTests
             User? user = timesheetViewModel.GetUser(-1);
             Assert.IsTrue(user == null);
         }
+
+        [TestMethod]
+        public void Check_For_User_Timesheet_From_List_Of_Timesheets()
+        {
+            List<TimeSheet> timeSheets = timesheetViewModel.FilterUserTimeSheets(new List<TimeSheet>());
+            Assert.IsTrue(timeSheets == null);
+        }
     }
 }
 
