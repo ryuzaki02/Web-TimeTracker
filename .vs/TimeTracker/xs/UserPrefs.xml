@@ -1,61 +1,57 @@
 ﻿<Properties StartupConfiguration="{D709879A-84A1-4CC1-BB88-FF13D686CB8A}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TimeTracker/Controllers/UserController.cs">
+  <MonoDevelop.Ide.ItemProperties.TimeTracker PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../.nuget/packages/microsoft.aspnet.webapi.scaffoldertemplates.attributerouting.csharp/5.1.0/Readme.txt">
     <Files>
-      <File FileName="TimeTracker/Program.cs" Line="28" Column="31" />
-      <File FileName="TimeTrackerTests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="TimeTracker/Program.cs" />
+      <File FileName="TimeTrackerTests/UnitTest1.cs" />
       <File FileName="TimeTrackerLibrary/Model/TimeSheet.cs" />
-      <File FileName="TimeTrackerLibrary/Data/TimeTrackerDbContext.cs" Line="18" Column="60" />
-      <File FileName="TimeTracker/Controllers/UserController.cs" Line="28" Column="68" />
-      <File FileName="TimeTracker/Views/User/Index.cshtml" Line="63" Column="68" />
-      <File FileName="TimeTrackerLibrary/ViewModel/UserViewModel.cs" Line="17" Column="51" />
-      <File FileName="TimeTrackerTests/UserTest.cs" Line="18" Column="15" />
-      <File FileName="TimeTracker/Views/Partials/_CreateUserPartial.cshtml" Line="25" Column="37" />
-      <File FileName="TimeTracker/Views/User/Create.cshtml" Line="1" Column="1" />
-      <File FileName="TimeTracker/Views/User/Delete.cshtml" Line="1" Column="1" />
-      <File FileName="TimeTracker/Views/User/Edit.cshtml" Line="1" Column="1" />
-      <File FileName="TimeTracker/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="TimeTrackerLibrary/Data/TimeTrackerDbContext.cs" />
+      <File FileName="TimeTracker/Controllers/UserController.cs" />
+      <File FileName="TimeTracker/Views/User/Index.cshtml" />
+      <File FileName="TimeTrackerLibrary/ViewModel/UserViewModel.cs" />
+      <File FileName="TimeTrackerTests/UserTest.cs" />
+      <File FileName="TimeTracker/Views/User/Create.cshtml" />
+      <File FileName="TimeTracker/Views/User/Delete.cshtml" />
+      <File FileName="TimeTracker/Views/User/Edit.cshtml" />
+      <File FileName="TimeTracker/Controllers/HomeController.cs" />
+      <File FileName="TimeTracker_Api/Program.cs" />
+      <File FileName="TimeTracker_Api/Controllers/WeatherForecastController.cs" />
+      <File FileName="TimeTracker_Api/Controllers/TestController.cs" Line="32" Column="10" />
+      <File FileName="TimeTracker/Views/User/Details.cshtml" />
+      <File FileName="TimeTracker_Api/Services/IWebClientServices.cs" Line="39" Column="14" />
+      <File FileName="TimeTracker_Api/Services/WebClientService.cs" Line="16" Column="1" />
+      <File FileName="TimeTracker_Api/Models/TimeTracker.cs" Line="7" Column="1" />
+      <File FileName="TimeTracker_Api/Controllers/TimeTrackerController.cs" Line="11" Column="52" />
+      <File FileName="../../.nuget/packages/microsoft.aspnet.webapi.scaffoldertemplates.attributerouting.csharp/5.1.0/readme.txt" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TimeTracker" expanded="True">
             <Node name="TimeTracker" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="UserController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Shared" expanded="True" />
                 <Node name="TimeSheet" expanded="True" />
                 <Node name="User" expanded="True" />
               </Node>
             </Node>
-            <Node name="TimeTrackerLibrary" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Model" expanded="True" />
-              <Node name="ViewModel" expanded="True" />
-            </Node>
             <Node name="TimeTrackerTests" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="TimeTracker" expanded="True">
-            <Node name="TimeTrackerTests" expanded="True">
-              <Node name="TimeTrackerTests" expanded="True">
-                <Node name="UserTest" expanded="True" />
-              </Node>
+            <Node name="TimeTracker_Api" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.TimeTracker PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MultiItemStartupConfigurations />
 </Properties>
