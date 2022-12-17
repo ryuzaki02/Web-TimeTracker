@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
-    @*List of todos passed from controller to show in table list*@
+    @*List of user passed from controller to show in table list*@
     var UserList = (IEnumerable<TimeTrackerLibrary.Model.User>)ViewData["UserList"];
 }
 
@@ -27,7 +27,7 @@
     }
 </style>
 
-@*This is the main table to show all todos*@
+@*This is the main table to show all users*@
 <table>
     @*This inline style provides background yellow to header only*@
     <thead style="background-color:lightblue">
@@ -49,7 +49,7 @@
         {
             <tr>
                 <td>
-                    @*This partial is used to show inline form to update Todo*@
+                    @*This partial is used to show inline form to update user*@
                     @Html.DisplayFor(modelItem => item.UserId)
                 </td>
                 <td>
