@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TimeTrackerLibrary.Data;
 
@@ -10,9 +11,10 @@ using TimeTrackerLibrary.Data;
 namespace TimeTrackerLibrary.Migrations
 {
     [DbContext(typeof(TimeTrackerDbContext))]
-    partial class TimeTrackerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221217004941_ChangedDataTypeOfTimesheetDurationMigration")]
+    partial class ChangedDataTypeOfTimesheetDurationMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.11");
@@ -27,18 +29,12 @@ namespace TimeTrackerLibrary.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<double>("Amount")
-                        .HasColumnType("REAL");
-
                     b.Property<DateTime>("BeginTime")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("TEXT");
-
-                    b.Property<double>("Duration")
-                        .HasColumnType("REAL");
 
                     b.Property<DateTime>("EndTime")
                         .HasColumnType("TEXT");

@@ -77,6 +77,9 @@ namespace TimeTracker
             if (user != null)
             {
                 contact.Timesheet.UserId = contact.UserId;
+                var hours = (contact.Timesheet.EndTime - contact.Timesheet.BeginTime).TotalHours;
+                contact.Timesheet.Duration = (int)hours;
+                contact.Timesheet.Amount = hours * user.Rate;
                 _context.Add(contact.Timesheet);
                 await _context.SaveChangesAsync();
 

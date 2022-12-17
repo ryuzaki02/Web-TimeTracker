@@ -15,10 +15,12 @@ namespace TimeTrackerLibrary.Model
         [Required]
         [DataType(DataType.Time)]
         public DateTime BeginTime { get; set; }
+        [DataType(DataType.Time)]
+        public DateTime EndTime { get; set; }
         [Required]
-        public DateTime Duration { get; }
+        public int Duration { get; set; }
         [Required]
-        public double Amount { get; }
+        public double Amount { get; set; }
         [Required]
         public string? Description { get; set; }
         [Required]
