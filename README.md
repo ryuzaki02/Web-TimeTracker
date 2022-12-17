@@ -40,4 +40,12 @@ Check-in 3 Updates - Divya
 - Added pull request for Aman to merge. 
 - Added unit tests.
 
-
+Check-in 3 :
+Divya Khemani - A00254753
+Unit test are being created - I created the unit test for each part of the code and commited onto the github repo
+The Library Project should have appropriate unit tests with it - updated all the unit tests in library projects
+Appropriate Data Annotations should also exist for the libraries
+Ui is being created and functional - still working on UI part 
+Data Attributes need to be started - edited 
+Server Validations should exist - edited modelviewstate
+Queries should be written in LINQ - edit queries in LINQ
